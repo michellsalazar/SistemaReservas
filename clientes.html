@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaPlus | Clientes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <div class="logo">RP</div>
+
+        <h1>ReservaPlus</h1>
+
+        <p>Gestión de Clientes</p>
+
+    </header>
+
+    <main class="contenedor">
+
+        <a href="index.html" class="btn-volver">
+            ← Volver al inicio
+        </a>
+
+        <div class="tarjeta-formulario">
+
+            <h2>Registrar Cliente</h2>
+
+            <form>
+
+                <input type="text"
+                       placeholder="Nombre completo"
+                       required>
+
+                <input type="text"
+                       placeholder="DNI"
+                       required>
+
+                <input type="text"
+                       placeholder="Teléfono"
+                       required>
+
+                <input type="email"
+                       placeholder="Correo electrónico"
+                       required>
+
+                <input type="text"
+                       placeholder="Dirección">
+
+                <button type="submit">
+                    Registrar Cliente
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="tabla-reservas">
+
+            <h2>Clientes Registrados</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>73845692</td>
+                        <td>987654321</td>
+                        <td>juan@gmail.com</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>María López</td>
+                        <td>71234567</td>
+                        <td>965874123</td>
+                        <td>maria@gmail.com</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro Gómez</td>
+                        <td>74859632</td>
+                        <td>987654123</td>
+                        <td>pedro@gmail.com</td>
+                        <td><button>Editar</button></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ReservaPlus</p>
+    </footer>
+
+</body>
+</html>

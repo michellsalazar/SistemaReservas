@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaPlus | Servicios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <div class="logo">RP</div>
+
+        <h1>ReservaPlus</h1>
+
+        <p>Gestión de Servicios</p>
+
+    </header>
+
+    <main class="contenedor">
+
+        <a href="index.html" class="btn-volver">
+            ← Volver al inicio
+        </a>
+
+        <div class="tarjeta-formulario">
+
+            <h2>Registrar Servicio</h2>
+
+            <form>
+
+                <input type="text"
+                       placeholder="Nombre del servicio"
+                       required>
+
+                <input type="text"
+                       placeholder="Descripción del servicio"
+                       required>
+
+                <input type="number"
+                       placeholder="Precio (S/.)"
+                       required>
+
+                <input type="number"
+                       placeholder="Duración (minutos)"
+                       required>
+
+                <select required>
+
+                    <option value="">
+                        Seleccione una categoría
+                    </option>
+
+                    <option>Básico</option>
+                    <option>Premium</option>
+                    <option>Empresarial</option>
+
+                </select>
+
+                <button type="submit">
+                    Registrar Servicio
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="tabla-reservas">
+
+            <h2>Servicios Disponibles</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Duración</th>
+                        <th>Categoría</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Corte de Cabello</td>
+                        <td>Servicio profesional</td>
+                        <td>S/. 25</td>
+                        <td>30 min</td>
+                        <td>Básico</td>
+                    </tr>
+
+                    <tr>
+                        <td>Masaje Relajante</td>
+                        <td>Relajación corporal</td>
+                        <td>S/. 80</td>
+                        <td>60 min</td>
+                        <td>Premium</td>
+                    </tr>
+
+                    <tr>
+                        <td>Asesoría Personalizada</td>
+                        <td>Atención especializada</td>
+                        <td>S/. 50</td>
+                        <td>45 min</td>
+                        <td>Premium</td>
+                    </tr>
+
+                    <tr>
+                        <td>Consultoría Empresarial</td>
+                        <td>Orientación para negocios</td>
+                        <td>S/. 120</td>
+                        <td>90 min</td>
+                        <td>Empresarial</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ReservaPlus</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaPlus | Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <div class="logo">RP</div>
+
+        <h1>ReservaPlus</h1>
+
+        <p>Gestión de Reservas</p>
+
+    </header>
+
+    <main class="contenedor">
+
+        <a href="index.html" class="btn-volver">
+            ← Volver al inicio
+        </a>
+
+        <div class="tarjeta-formulario">
+
+            <h2>Nueva Reserva</h2>
+
+            <form>
+
+                <input type="text"
+                       placeholder="Nombre del cliente"
+                       required>
+
+                <select required>
+
+                    <option value="">
+                        Seleccione un servicio
+                    </option>
+
+                    <option>Corte de Cabello</option>
+                    <option>Masaje Relajante</option>
+                    <option>Asesoría Personalizada</option>
+
+                </select>
+
+                <input type="date" required>
+
+                <input type="time" required>
+
+                <textarea
+                    rows="4"
+                    placeholder="Observaciones de la reserva">
+                </textarea>
+
+                <button type="submit">
+                    Registrar Reserva
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="tabla-reservas">
+
+            <h2>Reservas Registradas</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>José Portugal</td>
+                        <td>Corte de Cabello</td>
+                        <td>25/10/2026</td>
+                        <td>10:00</td>
+                        <td>Confirmada</td>
+                        <td>
+                            <button class="btn-cancelar">
+                                Cancelar
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mariela Salazar</td>
+                        <td>Masaje Relajante</td>
+                        <td>26/10/2026</td>
+                        <td>15:30</td>
+                        <td>Confirmada</td>
+                        <td>
+                            <button class="btn-cancelar">
+                                Cancelar
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Rodríguez</td>
+                        <td>Asesoría Personalizada</td>
+                        <td>28/10/2026</td>
+                        <td>11:00</td>
+                        <td>Pendiente</td>
+                        <td>
+                            <button class="btn-cancelar">
+                                Cancelar
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ReservaPlus</p>
+    </footer>
+
+</body>
+</html>
