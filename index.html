@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Sistema de Reservas</h1>
+        <p>Administración de clientes, servicios y reservas</p>
+    </header>
+
+    <main class="contenedor">
+        <h2>Panel principal</h2>
+        <p>Bienvenida al sistema de gestión de reservas.</p>
+
+        <section class="modulos">
+            <article class="tarjeta">
+                <h3>Clientes</h3>
+                <p>Registra, consulta y modifica clientes.</p>
+                <button type="button"
+                    onclick="mostrarMensaje('Clientes')">
+                    Ingresar
+                </button>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Servicios</h3>
+                <p>Administra los servicios, precios y duración.</p>
+                <button type="button"
+                    onclick="mostrarMensaje('Servicios')">
+                    Ingresar
+                </button>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Reservas</h3>
+                <p>Registra, consulta y cancela reservas.</p>
+                <button type="button"
+                    onclick="mostrarMensaje('Reservas')">
+                    Ingresar
+                </button>
+            </article>
+        </section>
+
+        <p id="mensaje" role="status"></p>
+    </main>
+
+    <footer>
+        <p>Sistema de Reservas - Primera versión</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
