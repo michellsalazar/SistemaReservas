@@ -195,8 +195,6 @@ Enlace del repositorio:
 https://github.com/michellsalazar/SistemaReservas
 
 
-(Reemplazar por el enlace exacto del repositorio si fuera diferente).
-
 Conclusiones
 Git y GitHub facilitaron la organización del proyecto y el control de versiones.
 El uso de ramas permitió desarrollar funcionalidades sin afectar la versión estable del sistema.
