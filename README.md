@@ -1,14 +1,13 @@
-Sistema de Reservas
-Sistema web para gestionar clientes, servicios y reservas de una empresa.
+ReservaPlus
+Sistema web para gestionar clientes, servicios y reservas.
 
 Funcionalidades
-Registro de clientes
-Modificación de clientes
-Consulta de clientes
-Registro de servicios
-Consulta de servicios
-Registro de reservas
-Consulta de reservas
-Cancelación de reservas
+Gestión de clientes
+Gestión de servicios
+Gestión de reservas
+Tecnologías
+HTML
+CSS
+JavaScript
 Versión
 v1.0.0
