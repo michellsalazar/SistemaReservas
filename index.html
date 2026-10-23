@@ -1,58 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Reservas</title>
+    <title>ReservaPlus</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
     <header class="encabezado">
-        <h1>Sistema de Reservas</h1>
-        <p>Administración de clientes, servicios y reservas</p>
+
+        <div class="logo">
+            RP
+        </div>
+
+        <h1>ReservaPlus</h1>
+
+        <p>
+            Gestión inteligente de clientes,
+            servicios y reservas
+        </p>
+
     </header>
 
     <main class="contenedor">
-        <h2>Panel principal</h2>
-        <p>Bienvenida al sistema de gestión de reservas.</p>
+
+        <h2>Panel Principal</h2>
+
+        <p>
+            Bienvenido al sistema de gestión de reservas.
+            Seleccione el módulo que desea administrar.
+        </p>
 
         <section class="modulos">
+
             <article class="tarjeta">
-                <h3>Clientes</h3>
-                <p>Registra, consulta y modifica clientes.</p>
-                <button type="button"
-                    onclick="mostrarMensaje('Clientes')">
+
+                <h3>👥 Clientes</h3>
+
+                <p>
+                    Registra, consulta y modifica la
+                    información de los clientes.
+                </p>
+
+                <button
+                    onclick="location.href='clientes.html'">
                     Ingresar
                 </button>
+
             </article>
 
             <article class="tarjeta">
-                <h3>Servicios</h3>
-                <p>Administra los servicios, precios y duración.</p>
-                <button type="button"
-                    onclick="mostrarMensaje('Servicios')">
+
+                <h3>🛎️ Servicios</h3>
+
+                <p>
+                    Administra servicios, precios,
+                    duración y categorías.
+                </p>
+
+                <button
+                    onclick="location.href='servicios.html'">
                     Ingresar
                 </button>
+
             </article>
 
             <article class="tarjeta">
-                <h3>Reservas</h3>
-                <p>Registra, consulta y cancela reservas.</p>
-                <button type="button"
-                    onclick="mostrarMensaje('Reservas')">
+
+                <h3>📅 Reservas</h3>
+
+                <p>
+                    Registra, consulta y gestiona
+                    las reservas programadas.
+                </p>
+
+                <button
+                    onclick="location.href='reservas.html'">
                     Ingresar
                 </button>
+
             </article>
+
         </section>
 
-        <p id="mensaje" role="status"></p>
     </main>
 
     <footer>
-        <p>Sistema de Reservas - Primera versión</p>
+
+        <p>
+            © 2026 ReservaPlus | Primera versión estable
+        </p>
+
     </footer>
 
-    <script src="js/app.js"></script>
 </body>
+
 </html>
