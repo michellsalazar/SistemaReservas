@@ -10,127 +10,132 @@
 
 <body>
 
-    <header class="encabezado">
+    <header class="topbar">
 
-        <div class="logo">RP</div>
+        <div class="logo">
+            ReservaPlus
+        </div>
 
-        <h1>ReservaPlus</h1>
-
-        <p>Gestión de Servicios</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
 
     </header>
 
-    <main class="contenedor">
+    <section class="banner">
 
-        <a href="index.html" class="btn-volver">
-            ← Volver al inicio
-        </a>
+        <h1>Gestión de Servicios</h1>
 
-        <div class="tarjeta-formulario">
+        <p>
+            Administra los servicios, precios y duración de forma profesional.
+        </p>
 
-            <h2>Registrar Servicio</h2>
+    </section>
 
-            <form>
+    <main class="dashboard">
 
-                <input type="text"
-                       placeholder="Nombre del servicio"
-                       required>
+        <div class="estadisticas">
 
-                <input type="text"
-                       placeholder="Descripción del servicio"
-                       required>
+            <div class="estadistica">
+                <h3>24</h3>
+                <span>Servicios</span>
+            </div>
 
-                <input type="number"
-                       placeholder="Precio (S/.)"
-                       required>
+            <div class="estadistica">
+                <h3>S/.120</h3>
+                <span>Precio Máximo</span>
+            </div>
 
-                <input type="number"
-                       placeholder="Duración (minutos)"
-                       required>
+            <div class="estadistica">
+                <h3>90 min</h3>
+                <span>Mayor Duración</span>
+            </div>
 
-                <select required>
+        </div>
 
-                    <option value="">
-                        Seleccione una categoría
-                    </option>
+        <section class="card">
 
-                    <option>Básico</option>
-                    <option>Premium</option>
-                    <option>Empresarial</option>
+            <h2>Nuevo Servicio</h2>
 
-                </select>
+            <form class="formulario">
 
-                <button type="submit">
+                <input type="text" placeholder="Nombre del servicio">
+
+                <input type="text" placeholder="Categoría">
+
+                <input type="number" placeholder="Precio">
+
+                <input type="number" placeholder="Duración (min)">
+
+                <textarea
+                    rows="4"
+                    placeholder="Descripción del servicio">
+                </textarea>
+
+                <button>
                     Registrar Servicio
                 </button>
 
             </form>
 
-        </div>
+        </section>
 
-        <div class="tabla-reservas">
+        <section class="card">
 
             <h2>Servicios Disponibles</h2>
 
             <table>
 
                 <thead>
-
                     <tr>
                         <th>Servicio</th>
-                        <th>Descripción</th>
+                        <th>Categoría</th>
                         <th>Precio</th>
                         <th>Duración</th>
-                        <th>Categoría</th>
                     </tr>
-
                 </thead>
 
                 <tbody>
 
                     <tr>
-                        <td>Corte de Cabello</td>
-                        <td>Servicio profesional</td>
+                        <td>Corte Premium</td>
+                        <td>Básico</td>
                         <td>S/. 25</td>
                         <td>30 min</td>
-                        <td>Básico</td>
                     </tr>
 
                     <tr>
                         <td>Masaje Relajante</td>
-                        <td>Relajación corporal</td>
+                        <td>Premium</td>
                         <td>S/. 80</td>
                         <td>60 min</td>
-                        <td>Premium</td>
                     </tr>
 
                     <tr>
                         <td>Asesoría Personalizada</td>
-                        <td>Atención especializada</td>
+                        <td>Premium</td>
                         <td>S/. 50</td>
                         <td>45 min</td>
-                        <td>Premium</td>
                     </tr>
 
                     <tr>
                         <td>Consultoría Empresarial</td>
-                        <td>Orientación para negocios</td>
+                        <td>Empresarial</td>
                         <td>S/. 120</td>
                         <td>90 min</td>
-                        <td>Empresarial</td>
                     </tr>
 
                 </tbody>
 
             </table>
 
-        </div>
+        </section>
 
     </main>
 
-    <footer>
-        <p>© 2026 ReservaPlus</p>
-    </footer>
-
 </body>
+
 </html>
